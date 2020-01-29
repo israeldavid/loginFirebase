@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>registro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class='ion-padding'>
+  <ion-item>
+    <ion-label>Email:</ion-label>
+    <ion-input [(ngModel)]="usuario.email" name="email" type="email" placeholder="your@email.com" ngModel required ></ion-input>
+    
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Password:</ion-label>
+    <ion-input name="password" [type]="passwordType" [(ngModel)]="usuario.password" placeholder="Password" ngModel required ></ion-input>
+    <ion-icon (click)="togglePassword()" [name]="nameIcon" color="medium" item-end></ion-icon>
+  </ion-item>
+
+  <ion-item-divider>
+    <ion-button size="large" (click)="onRegistro()">Regístrate</ion-button>
+    <ion-button size="large" routerLink="/login">Login</ion-button>
+  </ion-item-divider>
+</ion-content>
