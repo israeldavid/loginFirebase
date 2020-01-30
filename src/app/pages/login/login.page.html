@@ -17,8 +17,29 @@
     <ion-icon (click)="togglePassword()" [name]="nameIcon" color="medium" item-end></ion-icon>
   </ion-item>
 
-  <ion-item-divider>
-    <ion-button size="large" routerLink="/registro" >Regístrate</ion-button>
-    <ion-button size="large" (click)="validarUsuario()">Login</ion-button>
-  </ion-item-divider>
+  <ion-grid>
+    <ion-row>
+      <ion-col size=12>
+        <ion-button color="tertiary" expand="full" (click)="validarUsuario()">Login Con email</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size=12>
+        <ion-button color="primary" expand="full" (click)="conectarFacebook()">Login Con fb</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size=12>
+        <ion-button color="light" expand="full" (click)="conectarGoogle()">Login con Google</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size=12>
+        <ion-button color="dark" expand="full" routerLink="/registro" >Regístrate</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

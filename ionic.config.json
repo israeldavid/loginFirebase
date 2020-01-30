@@ -1,5 +1,7 @@
 {
   "name": "loginF",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

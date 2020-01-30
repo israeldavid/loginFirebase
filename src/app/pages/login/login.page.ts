@@ -23,8 +23,17 @@ export class LoginPage implements OnInit {
   async validarUsuario(){
     const user = await this.auth.onLogin(this.usuario)
     if (user){
-      this.router.navigateByUrl('/admin');
+      this.router.navigateByUrl('/tabs');
     }
+  }
+
+  conectarFacebook(){
+    console.log("Conectar Facebook");
+  }
+
+  async conectarGoogle(){
+    const user = await this.auth.GoogleAuth()
+    this.router.navigateByUrl('/home');
   }
 
   togglePassword() {
