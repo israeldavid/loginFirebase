@@ -5,14 +5,7 @@
 export const environment = {
   production: false,
   firebaseConfig : {
-    apiKey: "AIzaSyCYrEN_dbLjPIC7w9GU0LmRbh1PZxhErM0",
-    authDomain: "kiaracam.firebaseapp.com",
-    databaseURL: "https://kiaracam.firebaseio.com",
-    projectId: "kiaracam",
-    storageBucket: "kiaracam.appspot.com",
-    messagingSenderId: "780010645704",
-    appId: "1:780010645704:web:133a4b3ea31c5183515dfd",
-    measurementId: "G-RP9ZLDBGY2"
+
   }
 };
 
